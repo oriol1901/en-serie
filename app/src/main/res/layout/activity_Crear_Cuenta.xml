@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_auth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="oriol.ivan.com.enserieproject.AuthActivity"
+    android:background="#123451">
+    <LinearLayout
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="285dp">
+        <ImageView
+            android:id="@+id/logo_auth"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="27dp"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREAR CUENTA"
+            android:textColor="@color/blanco"
+            android:textSize="25dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/nick_edittext"
+        android:layout_height="wrap_content"
+        android:hint="Nick de Usuario"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/edittext_vertical_margin"
+        android:paddingLeft="@dimen/edittext_horizontal_margin"
+        android:paddingRight="@dimen/edittext_horizontal_margin"
+        android:paddingTop="@dimen/edittext_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp" />
+
+    <EditText
+        android:id="@+id/name_edt"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de Usuario"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/edittext_vertical_margin"
+        android:paddingLeft="@dimen/edittext_horizontal_margin"
+        android:paddingRight="@dimen/edittext_horizontal_margin"
+        android:paddingTop="@dimen/edittext_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp" />
+    <EditText
+        android:id="@+id/lastname_edittext"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/edittext_vertical_margin"
+        android:paddingLeft="@dimen/edittext_horizontal_margin"
+        android:paddingRight="@dimen/edittext_horizontal_margin"
+        android:paddingTop="@dimen/edittext_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp" />
+    <EditText
+        android:id="@+id/correo_edittext"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/edittext_vertical_margin"
+        android:paddingLeft="@dimen/edittext_horizontal_margin"
+        android:paddingRight="@dimen/edittext_horizontal_margin"
+        android:paddingTop="@dimen/edittext_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp" />
+    <EditText
+        android:id="@+id/password_edt"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/edittext_vertical_margin"
+        android:paddingLeft="@dimen/edittext_horizontal_margin"
+        android:paddingRight="@dimen/edittext_horizontal_margin"
+        android:paddingTop="@dimen/edittext_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp" />
+    <EditText
+        android:id="@+id/password_verify_edt"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/edittext_vertical_margin"
+        android:paddingLeft="@dimen/edittext_horizontal_margin"
+        android:paddingRight="@dimen/edittext_horizontal_margin"
+        android:paddingTop="@dimen/edittext_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edittext_vertical_margin"
+            android:background="@drawable/checkbox_crear_cuenta"
+            android:padding="1dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acepto los terminos y condiciones de uso."
+            android:textSize="18dp"
+            android:textColor="@color/blanco"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/entrar_btn"
+        android:layout_height="50dp"
+        android:text="REGISTRARSE"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="285dp" />
+
+
+
+
+</LinearLayout>

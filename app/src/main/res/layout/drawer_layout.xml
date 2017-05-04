@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_lateral"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0dp"
+    android:background="#FFF">
+
+    <Button
+        android:text="BUSQUEDA AVANZADA"
+        android:layout_width="0dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_busqueda"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_amigos"
+        android:paddingBottom="18dp" />
+
+    <Button
+        android:text="AJUSTES"
+        android:layout_width="0dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_ajustes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingTop="18dp"
+        app:layout_constraintTop_toTopOf="@+id/view_linea2"
+        android:paddingBottom="18dp" />
+
+    <Button
+        android:text="AMIGOS"
+        android:layout_width="0dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_amigos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_categorias"
+        android:paddingBottom="18dp" />
+
+    <Button
+        android:text="Categorias"
+        android:layout_width="0dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_categorias"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp" />
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imagen_nombre"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="Manuel Eustaquio"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_nombre"
+        android:textSize="24sp"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        app:layout_constraintTop_toTopOf="@+id/imagen_nombre"
+        app:layout_constraintBottom_toBottomOf="@+id/imagen_nombre"
+        android:layout_marginStart="60dp"
+        app:layout_constraintLeft_toRightOf="@+id/imagen_nombre"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:text="QUIENES SOMOS"
+        android:layout_width="0dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_somos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ajustes"
+        android:paddingBottom="18dp" />
+
+    <View
+        android:background="#000"
+        android:layout_width="411dp"
+        android:layout_height="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:id="@+id/view_linea2"
+        android:layout_marginTop="192dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_busqueda" />
+    <View
+        android:background="#000"
+        android:layout_width="411dp"
+        android:layout_height="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_nombre"
+        android:id="@+id/view" />
+</android.support.constraint.ConstraintLayout>
